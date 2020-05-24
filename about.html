@@ -33,8 +33,22 @@
 	<body>	
 	 
 		   <!-- start section navbar -->
+		   
   <nav id="main-nav">
     <div class="row">
+		<!-- preloader
+    ================================================== -->
+    <div id="preloader">
+		<div id="loader">
+			<div class="line-scale-pulse-out">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
       <div class="container">
 
         <div class="logo">
@@ -187,7 +201,13 @@
 		<script src="js/simple-skillbar.js"></script>													
 		<script src="js/main2.js"></script>
 
-
+		<script>
+			$(window).load(function() {
+			  $('#preloader ').hide();
+			});
+		  </script>
+		
+		  
 		
 
 
